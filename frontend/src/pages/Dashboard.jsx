@@ -52,12 +52,15 @@ const Dashboard = () => {
       
       <Grid container spacing={4}>
         {cards.map((card) => (
-          <Grid item key={card.title} xs={12} sm={6}>
+          <Grid item key={card.title} xs={12} sm={6} md={3}> {/* Set item width to make them evenly spaced */}
             <Card 
               sx={{ 
                 height: '100%', 
+                minHeight: 300,
+                minWidth: 500,
                 display: 'flex', 
                 flexDirection: 'column',
+                justifyContent: 'space-between',
                 transition: '0.3s',
                 '&:hover': {
                   boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)'
