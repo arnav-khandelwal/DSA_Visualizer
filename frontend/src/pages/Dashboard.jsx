@@ -50,9 +50,9 @@ const Dashboard = () => {
         </Typography>
       </Box>
       
-      <Grid container spacing={4}>
+      <Grid container spacing={4}sx={{ ml: 7 }}>
         {cards.map((card) => (
-          <Grid item key={card.title} xs={12} sm={6} md={3}> {/* Set item width to make them evenly spaced */}
+          <Grid item key={card.title} xs={12} sm={6} md={3}> 
             <Card 
               sx={{ 
                 height: '100%', 
